@@ -160,5 +160,34 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
   }
 }
+
+@utility bg-hero-overlay {
+  background-image: var(--gradient-hero);
+}
+
+@utility bg-gradient-warm {
+  background-image: var(--gradient-warm);
+}
+
+@utility shadow-soft {
+  box-shadow: var(--shadow-soft);
+}
+
+@utility shadow-lifted {
+  box-shadow: var(--shadow-lifted);
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+}
+
