@@ -100,7 +100,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="mx-auto -mt-14 max-w-2xl px-6 pb-24">
+      <section className="relative z-10 mx-auto -mt-14 max-w-2xl px-6 pb-24">
         <div className="rounded-3xl border border-border bg-card p-7 shadow-lifted sm:p-9">
           <div className="space-y-8">
             <div className="space-y-3">
