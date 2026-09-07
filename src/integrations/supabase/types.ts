@@ -14,7 +14,45 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      destinations: {
+        Row: {
+          best_months: string[]
+          created_at: string
+          description: string
+          difficulty: string
+          id: string
+          latitude: number | null
+          longitude: number | null
+          name: string
+          region: string
+          tags: string[]
+        }
+        Insert: {
+          best_months?: string[]
+          created_at?: string
+          description: string
+          difficulty: string
+          id?: string
+          latitude?: number | null
+          longitude?: number | null
+          name: string
+          region: string
+          tags?: string[]
+        }
+        Update: {
+          best_months?: string[]
+          created_at?: string
+          description?: string
+          difficulty?: string
+          id?: string
+          latitude?: number | null
+          longitude?: number | null
+          name?: string
+          region?: string
+          tags?: string[]
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
