@@ -195,7 +195,3 @@
   box-shadow: var(--shadow-lifted);
 }
 
-@utility font-display {
-  font-family: var(--font-display);
-}
-
