@@ -39,7 +39,7 @@ export const Route = createFileRoute("/itinerary")({
       },
     ],
   }),
-  component: ItineraryPage;
+  component: ItineraryPage,
 });
 
 function ItineraryPage() {
