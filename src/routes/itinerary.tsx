@@ -19,10 +19,10 @@ type Search = {
 
 export const Route = createFileRoute("/itinerary")({
   validateSearch: (search: Record<string, unknown>): Search => ({
-    region: typeof search.region === "string" ? search.region : "Hunza",
-    days: Math.min(14, Math.max(3, Number(search.days) || 6)),
-    interests: typeof search.interests === "string" ? search.interests : "nature",
-    month: typeof search.month === "string" ? search.month : "June",
+    region: typeof search["region"] === "string" ? search["region"] : "Hunza",
+    days: Math.min(14, Math.max(3, Number(search["days"]) || 6)),
+    interests: typeof search["interests"] === "string" ? search["interests"] : "nature",
+    month: typeof search["month"] === "string" ? search["month"] : "June",
   }),
   head: () => ({
     meta: [
